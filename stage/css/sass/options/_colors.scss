@@ -1,0 +1,30 @@
+$themes: (
+  green-theme: (
+    color: #16a085,
+  ),
+  red-theme: (
+    color: #e74c3c,
+  ),
+  grey-theme: (
+    color: #95a5a6,
+  ),
+  blue-theme: (
+    color: #34495e,
+  ),
+);
+$modethemes: (
+  main-dark: (
+    color: #212224,
+  ),
+  light-dark: (
+    color: #323437,
+  ),
+);
+
+@each $theme, $map in $themes {
+  .#{$theme} {
+    .page .page-head .page-title {
+      color: map-get($map, color);
+    }
+  }
+}

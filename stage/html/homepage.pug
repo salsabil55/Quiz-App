@@ -1,0 +1,54 @@
+-var pageTitle = 'HomePage';
+doctype html
+head
+    include pug/components/meta
+    include pug/components/styles
+body
+    .page.home-page
+        include pug/components/setting-box
+        include pug/layouts/sidebar
+        .content-area
+            include pug/layouts/header
+            .container-fluid
+                .content 
+                    include pug/components/head-page
+                    .quiz-block 
+                        .start-btn 
+                            button Start Quiz  
+                        .info-box 
+                            .info-title Some Rules of Quiz
+                            .info-list 
+                                .info 1- You will have only <span> 15 second </span> per each question.
+                                .info 2- Once You Select your Answer , You can't reselct 
+                                .info 3- You Can't Exit Exam after finish all questions 
+                                .info 4- You'll get points on the basis of your correct answer
+                            .quiz-buttons
+                                button.quit Exit Quiz
+                                button.continue Continue
+                        .quiz-box 
+                            header 
+                                .title Awesome Quiz Application 
+                                .timer 
+                                    .time_text Time Left 
+                                    .timer_sec 15
+                                    .time_line   
+                            section 
+                                .que_text 
+                                .option-list 
+                                            
+                            footer
+                                .total_que 
+                                    //- span <p>2</p>of <p>5</p> Questions
+                                button.next_btn Next Question
+
+                        .result_box 
+                            .icon 
+                                i.fas.fa-crown 
+                            .complete-text You've completed the Quiz !
+                            .score_text 
+                                //- span and Sorry, you got only <p> 2</p> out of <p>5</p>   
+                            .buttons 
+                                .restart Replay Quiz 
+                                .quit Quit Quiz    
+
+    include pug/components/scripts

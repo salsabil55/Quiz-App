@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compitable" content="ie=edge">
+  <title>HomePage</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&amp;display=swap">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="page home-page">
+    <div class="setting-box hidden-setting">
+      <div class="toggle-setting"><i class="fas fa-cog fa-spin"></i></div>
+      <div class="setting-content">
+        <div class="option-box color-options">
+          <h4>Colors Options</h4>
+          <ul class="list-unstyled">
+            <li data-theme="green-theme"></li>
+            <li data-theme="red-theme"></li>
+            <li data-theme="grey-theme"></li>
+            <li data-theme="blue-theme"></li>
+          </ul>
+        </div>
+        <div class="option-box mode-options"> 
+          <h4> Mode Options</h4>
+          <ul class="list-unstyled toggle-mode">
+            <li data-theme="main-dark">                   </li>
+            <li data-theme="light-dark">                   </li>
+          </ul>
+        </div>
+        <div class="option-box fonts-option">
+          <h4>Fonts  Options  </h4>
+          <select class="form-control">
+            <option value="public">publicfont</option>
+            <option value="sans">sansfont</option>
+            <option value="roboto">robotofont</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="logo-area text-center"> 
+        <div class="bg-logo"><i class="fas fa-chart-line"> </i><span class="logo-title">Profile </span></div>
+      </div>
+      <ul class="links-area list-unstyled">
+        <li><a class="active" href="homepage.html">HomePage</a></li>
+        <li> <a class="toggle-submenu" href="#">
+             Forms <i class="fas fa-angle-right"></i></a>
+          <ul class="child-links list-unstyled"> 
+            <li><a href="#">Textarea</a></li>
+            <li><a href="#">Checkbox<span class="new">new</span></a></li>
+            <li><a href="#">Tables</a></li>
+          </ul>
+        </li>
+        <li> <a class="toggle-submenu" href="#">
+             Misc <i class="fas fa-angle-right"></i></a>
+          <ul class="child-links list-unstyled"> 
+            <li><a href="#">Loading</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Tables  </a></li>
+          </ul>
+        </li>
+        <li><a href="chart.html">Charts              </a></li>
+      </ul>
+    </div>
+    <div class="content-area">
+      <div class="header">
+        <div class="row"> 
+          <div class="left-menu"><i class="fas fa-exchange-alt fa-lg toggle-sidebar"></i><i class="fas fa-expand toggle-full-screen"></i></div>
+          <div class="rigt-menu">  
+            <div class="dropdown">
+              <div class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bell"></i></div>
+              <div class="dropdown-menu dropdown-menu-right dropdown-notify" aria-labelledby="dropdownMenuButton">
+                <div class="notify-header"> 
+                  <h4>Notifications (50)</h4><a>Marks All Read</a>
+                </div>
+                <div class="notify-body"> 
+                  <ul class="list-unstyled">
+                    <li>
+                      <div class="media-msg"><img src="https://codedthemes.com/demos/admin-templates/datta-able/bootstrap/assets/images/user/avatar-1.jpg">
+                        <div class="msg-body"><a>You Have New message from friend</a>
+                          <p>Seen message</p>
+                        </div>
+                      </div>
+                      <div class="time-msg"> <i class="fas fa-clock"> </i><span>30min</span></div>
+                    </li>
+                    <li>
+                      <div class="media-msg"><img src="https://codedthemes.com/demos/admin-templates/datta-able/bootstrap/assets/images/user/avatar-1.jpg">
+                        <div class="msg-body"><a>You Have New message from friend</a>
+                          <p>Unseen message</p>
+                        </div>
+                      </div>
+                      <div class="time-msg"> <i class="fas fa-clock"> </i><span>10min </span></div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="notify-footer"> <a>See All Message                       </a></div>
+              </div>
+            </div>
+            <div class="dropdown user-menu">
+              <div class="dropdown-toggle" id="usermenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="https://codedthemes.com/demos/admin-templates/datta-able/bootstrap/assets/images/user/avatar-2.jpg"></div>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="usermenu">
+                <div class="notify-header"> 
+                  <div class="right-header"> <img src="https://codedthemes.com/demos/admin-templates/datta-able/bootstrap/assets/images/user/avatar-1.jpg"><span>john Doe </span></div>
+                  <div class="left-header"> <i class="fas fa-sign-out-alt"></i></div>
+                </div>
+                <div class="header-body"> 
+                  <ul class="list-unstyled"> 
+                    <li> <a><i class="fas fa-cog"></i><span>Setting </span></a></li>
+                    <li><a><i class="fas fa-user"> </i><span>Profile </span></a></li>
+                    <li> <a><i class="fas fa-envelope"></i><span>Message                            </span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="content"> 
+          <div class="page-head">
+            <h1 class="page-title">Welcome to HomePage</h1>
+          </div>
+          <div class="quiz-block"> 
+            <div class="start-btn"> 
+              <button>Start Quiz  </button>
+            </div>
+            <div class="info-box"> 
+              <div class="info-title">Some Rules of Quiz</div>
+              <div class="info-list"> 
+                <div class="info">1- You will have only <span> 15 second </span> per each question.</div>
+                <div class="info">2- Once You Select your Answer , You can't reselct </div>
+                <div class="info">3- You Can't Exit Exam after finish all questions </div>
+                <div class="info">4- You'll get points on the basis of your correct answer</div>
+              </div>
+              <div class="quiz-buttons">
+                <button class="quit">Exit Quiz</button>
+                <button class="continue">Continue</button>
+              </div>
+            </div>
+            <div class="quiz-box"> 
+              <header> 
+                <div class="title">Awesome Quiz Application </div>
+                <div class="timer"> 
+                  <div class="time_text">Time Left </div>
+                  <div class="timer_sec">15</div>
+                  <div class="time_line">  </div>
+                </div>
+              </header>
+              <section> 
+                <div class="que_text"> </div>
+                <div class="option-list"> </div>
+              </section>
+              <footer>
+                <div class="total_que"> </div>
+                <button class="next_btn">Next Question</button>
+              </footer>
+            </div>
+            <div class="result_box"> 
+              <div class="icon"> <i class="fas fa-crown"> </i></div>
+              <div class="complete-text">You've completed the Quiz !</div>
+              <div class="score_text"> </div>
+              <div class="buttons"> 
+                <div class="restart">Replay Quiz </div>
+                <div class="quit">Quit Quiz    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>

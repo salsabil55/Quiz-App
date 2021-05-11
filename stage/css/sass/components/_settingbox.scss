@@ -1,0 +1,109 @@
+.setting-box {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0 4px 17px 0 #0000001a;
+  width: 180px;
+  height: 100%;
+  transition: 0.3s;
+  .option-box {
+    height: 100%;
+    border-bottom: 1px solid #f5f6f8;
+    margin-bottom: 20px;
+  }
+  h4 {
+    margin: 10px 0 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: #3f4d67;
+  }
+  .toggle-setting {
+    position: absolute;
+    top: 30%;
+    left: -30px;
+    background-color: white;
+    padding: 8px 10px;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: 0 4px 17px 0 #0000001a;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    i {
+      color: #3f4d67;
+      font-size: 15px;
+    }
+  }
+  &.hidden-setting {
+    right: -180px;
+  }
+  .color-options {
+    text-align: center;
+
+    ul {
+      $colors: #16a085, #e74c3c, #95a5a6, #34495e;
+      @for $i from 1 through length($colors) {
+        li:nth-child(#{$i}) {
+          background-color: nth($colors, $i);
+        }
+      }
+      li {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        opacity: 0.8;
+        cursor: pointer;
+        display: inline-block;
+        transition: 0.3s;
+        &.active {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .fonts-option {
+    select {
+      width: 120px;
+      margin: auto;
+      text-align: center;
+      margin-bottom: 10px;
+      height: 30px;
+      font-size: 12px;
+      line-height: 30px;
+      border: 1px solid #f5f6f8;
+    }
+  }
+  .mode-options {
+    position: relative;
+    padding-bottom: 20px;
+    ul.toggle-mode {
+      text-align: center;
+      margin-bottom: 20px;
+      margin: auto;
+      li {
+        display: inline-block;
+        i {
+          margin-right: 10px;
+          margin-left: 10px;
+          font-size: 8px;
+          padding: 8px;
+          border-radius: 50%;
+          box-shadow: 0 3px 10px #f3f7fb;
+          cursor: pointer;
+          &.fa-moon {
+            color: #f4f7fa;
+            border: 1px solid white;
+            background: #000000 !important;
+          }
+          &.fa-sun {
+            color: #ffe60f;
+            background: #ffffff;
+            font-size: 11px;
+          }
+        }
+      }
+    }
+  }
+}

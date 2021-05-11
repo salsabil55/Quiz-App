@@ -1,0 +1,59 @@
+.header
+    .row 
+        .left-menu
+            i.fas.fa-exchange-alt.fa-lg.toggle-sidebar
+            i.fas.fa-expand.toggle-full-screen
+        .rigt-menu   
+            .dropdown
+                #dropdownMenuButton.dropdown-toggle(data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                    i.fas.fa-bell
+                .dropdown-menu.dropdown-menu-right.dropdown-notify(aria-labelledby='dropdownMenuButton')
+                    .notify-header 
+                        h4 Notifications (50)
+                        a Marks All Read
+                    .notify-body 
+                        ul.list-unstyled
+                            li
+                                .media-msg
+                                    img(src="https://codedthemes.com/demos/admin-templates/datta-able/bootstrap/assets/images/user/avatar-1.jpg")
+                                    .msg-body
+                                        a You Have New message from friend
+                                        p Seen message
+                                .time-msg 
+                                    i.fas.fa-clock 
+                                    span 30min
+                            li
+                                .media-msg
+                                    img(src="https://codedthemes.com/demos/admin-templates/datta-able/bootstrap/assets/images/user/avatar-1.jpg")
+                                    .msg-body
+                                        a You Have New message from friend
+                                        p Unseen message
+                                .time-msg 
+                                    i.fas.fa-clock 
+                                    span 10min 
+                    .notify-footer 
+                        a See All Message                       
+            .dropdown.user-menu
+                #usermenu.dropdown-toggle(data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                    img(src="https://codedthemes.com/demos/admin-templates/datta-able/bootstrap/assets/images/user/avatar-2.jpg")
+                .dropdown-menu.dropdown-menu-right(aria-labelledby='usermenu')
+                    .notify-header 
+                        .right-header 
+                            img(src="https://codedthemes.com/demos/admin-templates/datta-able/bootstrap/assets/images/user/avatar-1.jpg")
+                            span john Doe 
+                        .left-header 
+                            i.fas.fa-sign-out-alt
+                    .header-body 
+                        ul.list-unstyled 
+                            li 
+                                a
+                                    i.fas.fa-cog
+                                    span Setting 
+                            li
+                                a
+                                    i.fas.fa-user 
+                                    span Profile 
+                            li 
+                                a
+                                    i.fas.fa-envelope
+                                    span Message                            

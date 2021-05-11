@@ -1,0 +1,23 @@
+.setting-box.hidden-setting
+    .toggle-setting
+        i.fas.fa-cog.fa-spin
+    .setting-content
+        .option-box.color-options
+            h4 Colors Options
+            - var themes = ["green-theme","red-theme","grey-theme","blue-theme"]
+            ul.list-unstyled
+                each theme in themes
+                    li(data-theme=theme)
+        .option-box.mode-options 
+            h4  Mode Options
+            - var modes = ["main-dark","light-dark"]
+            ul.list-unstyled.toggle-mode
+                each mode in modes
+                    li(data-theme=mode)                    
+                    
+        .option-box.fonts-option
+            h4 Fonts  Options  
+            - var fonts = ['public','sans','roboto']
+            select.form-control
+                each font in fonts 
+                    option(value=font)=font + 'font'  
